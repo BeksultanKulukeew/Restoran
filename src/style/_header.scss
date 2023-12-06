@@ -1,0 +1,98 @@
+.header{
+  &__content{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 10px;
+  }
+  &__logo{
+    margin-right: 72px;
+  }
+  &__search{
+    display: flex;
+    align-items: center;
+    width: 555px;
+    height: 52px;
+    border-radius: 10px;
+    background: #504B4A;
+    gap: 12px;
+    &-input{
+      color: #CFCFCF;
+      background:#504B4A ;
+      border: none;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal
+    }
+  }
+  &__tel{
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+    &-call{
+      width: 32px;
+      height: 32px;
+      @extend %buttonGradient;
+      @extend %flexCenter;
+      border-radius: 50%;
+
+    }
+    &-info{
+      display: flex;
+      flex-direction: column;
+      width: 136px;
+      color: #CFCFCF;
+      font-family: Gilroy;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+
+  }
+  &__btn{
+    position: relative;
+    @extend %buttonGradient;
+    width: 149px;
+    height: 52px;
+    border-radius: 10px;
+    margin-left: 158px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &-info{
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 30px;
+      &::before{
+        content: "";
+        position: absolute;
+        left:95px;
+        top: 8px;
+        width: 2px;
+        height: 38px;
+        background:white;
+      }
+      &::after{
+        content: "4";
+        width: 24px;
+        height: 24px;
+        background: white;
+        border-radius: 50%;
+        @extend %flexCenter;
+        color: #403C3B;
+        font-family: Gilroy;
+        font-size: 12px;
+        font-weight: 600;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+      }
+
+    }
+  }
+
+}

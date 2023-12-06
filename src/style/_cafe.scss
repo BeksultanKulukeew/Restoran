@@ -1,0 +1,92 @@
+.cafe{
+  &__content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 610px;
+    background: url("../images/cafe1.png");
+    position: relative;
+  }
+  &__info{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+  &-logo{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 32px;
+    line-height: normal;
+    text-transform: uppercase;
+    position: absolute;
+    left: 70px;
+    top: 100px ;
+  }
+  &-text{
+    width: 563px;
+    color: #CFCFCF;
+    font-family: Gilroy;
+    font-size:16px;
+    font-style: normal;
+    font-weight: 400;
+    position: absolute;
+    left: 70px;
+    top: 165px;
+  }
+    &-btn{
+      width: 223px;
+      height: 59px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(2.5px);
+      color: #FFF;
+      font-family: Proxima Nova;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: absolute;
+      left: 70px;
+      bottom: 101px;
+    }
+  }
+  &__work {
+    width: 50%;
+    height: 469px;
+    @extend %flexCenter;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 100px 0;
+
+
+    &-menu {
+      width: 228px;
+      height: 227px;
+      flex-shrink: 0;
+      background: rgba(80, 75, 74, 0.90);
+      backdrop-filter: blur(2px);
+      @extend %flexCenter;
+      flex-flow: column;
+      row-gap: 26px;
+      &-svg{
+        width: 70px;
+        height: 70px;
+        flex-shrink: 0;
+      }
+      &-info{
+        color: #FFF;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+
+        &:hover{
+          color: #79B282;
+          transition: .8s;
+        }
+      }
+    }
+
+  }
+}
