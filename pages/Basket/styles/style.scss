@@ -17,9 +17,9 @@
 }
 body{
   background: #403C3B ;
-&::-webkit-scrollbar{
-  display: none;
-}
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
 }
 img{
@@ -48,4 +48,3 @@ input,textarea{
 }
 @import "header";
 @import "footer";
-@import "cheap";

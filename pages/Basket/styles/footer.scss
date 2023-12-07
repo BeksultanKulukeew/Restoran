@@ -1,0 +1,141 @@
+.footer{
+  padding: 50px 0;
+  &__content{
+    width: 100%;
+    height: 864.5px;
+    flex-shrink: 0;
+  }
+  &__map{
+    width:100%;
+    height: 500px;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info{
+    width: 100%;
+    height: 195px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    &-arrow{
+      width: 64px;
+      height: 64px;
+      background: white;
+      border-radius: 50%;
+      @extend %flexCenter;
+      position: absolute;
+      left: 10px ;
+      top: 51px;
+
+
+
+    }
+    &-text{
+      position: absolute;
+      left: 155px;
+      top: 16px;
+      color: #CFCFCF;
+      gap: 7px;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-title{
+      color: #FFF;
+      margin-bottom: 15px;
+      font-family: Gilroy;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 25px; /* 100% */
+      letter-spacing: 3.75px;
+    }
+    &-list{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      column-gap: 30px;
+      position: absolute;
+      right: 326px;
+      bottom: 85px;
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal
+
+    }
+  }
+}
+.overlay{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #00000099;
+  z-index: 5;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 458px;
+  height: 348px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(80, 75, 74, 0.90);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__info {
+    width: 458px;
+    height: 348px;
+    position: relative;
+
+    &-svg {
+      width: 76px;
+      height: 89px;
+      position: absolute;
+      left: 191px ;
+      top: 52px;
+    }
+
+    &-text {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: absolute;
+      left: 75px;
+      bottom: 157px;
+    }
+
+    &-btn {
+      @extend %buttonGradient;
+      width: 188px;
+      height: 51px;
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: absolute;
+      left: 135px;
+      bottom: 63px;
+    }
+  }
+}

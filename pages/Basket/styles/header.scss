@@ -67,16 +67,16 @@
       background: #635C5A;
     }
 
-      &::after{
-        content: "Войти";
-        position: absolute;
-        left: 40px;
-        color: #FFF;
-        font-family: Gilroy;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+    &::after{
+      content: "Войти";
+      position: absolute;
+      left: 40px;
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
     }
   }
   &__btn{
