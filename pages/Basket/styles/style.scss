@@ -42,9 +42,10 @@ input,textarea{
   font-family: inherit;
 }
 .container{
-  max-width: 1392px;
+  max-width: 1312px;
   padding: 0 20px;
   margin: 0 auto;
 }
 @import "header";
 @import "footer";
+@import "qustion";

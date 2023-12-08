@@ -11,7 +11,7 @@
           justify-content: center;
 }
 
-.popup__info-btn, .header__btn, .header__tel-call {
+.question__block-cost_btn, .question__block-count_btn, .question__logo-title::before, .popup__info-btn, .header__btn, .header__tel-call {
   background: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
   -webkit-box-shadow: 0 30px 45px 0 rgba(43, 40, 40, 0.6);
           box-shadow: 0 30px 45px 0 rgba(43, 40, 40, 0.6);
@@ -57,7 +57,7 @@ input, textarea {
 }
 
 .container {
-  max-width: 1392px;
+  max-width: 1312px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -225,17 +225,8 @@ input, textarea {
 }
 .footer__content {
   width: 100%;
-  height: 864.5px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-}
-.footer__map {
-  width: 100%;
-  height: 500px;
-}
-.footer__map iframe {
-  width: 100%;
-  height: 100%;
 }
 .footer__info {
   width: 100%;
@@ -381,4 +372,194 @@ input, textarea {
   position: absolute;
   left: 135px;
   bottom: 63px;
+}
+
+.question__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 0;
+  padding: 0 240px;
+  margin-bottom: 70px;
+}
+.question__logo-btn {
+  width: 150px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px 0;
+  background: #403C3B;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.question__logo-btn_svg::before {
+  content: "к выбору блюда";
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+}
+.question__logo-title {
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  position: relative;
+}
+.question__logo-title::before {
+  content: "";
+  width: 33px;
+  height: 4px;
+  position: absolute;
+  top: 17px;
+  left: -30px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.question__logo-title::after {
+  content: "(в корзине 3 товара)";
+  color: #72A479;
+  font-family: Gilroy;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+  position: absolute;
+  left: 180px;
+  top: 15px;
+}
+.question__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 100px;
+  border-radius: 10px;
+}
+.question__block {
+  padding: 0;
+  height: 126px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+  border-radius: 10px 10px 0 0;
+}
+.question__block.two {
+  border-radius: 0 0 10px 10px;
+}
+.question__block-img {
+  width: 117px;
+  height: 86px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+.question__block-info {
+  margin-left: 40px;
+}
+.question__block-info_subtitle {
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.question__block-info_text {
+  color: #A6A7AB;
+  font-family: Gilroy;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.question__block-count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  margin-left: 210px;
+}
+.question__block-count_btn {
+  color: white;
+  font-size: 22px;
+  width: 26.972px;
+  height: 26.972px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 100%;
+}
+.question__block-count_numbers {
+  color: #FFF;
+  font-family: Greenwich;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.question__block-cost {
+  margin-left: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 73px;
+}
+.question__block-cost_money {
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.question__block-cost_btn {
+  color: white;
+  font-size: 22px;
+  width: 26.972px;
+  height: 26.972px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 100%;
 }
