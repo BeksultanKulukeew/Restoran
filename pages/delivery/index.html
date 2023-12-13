@@ -6,10 +6,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Basket</title>
+    <title>Delivery</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.scss">
-    <link rel="icon" href="../../src/images/icon.jpg">
+    <link rel="icon" href="./images/icon.png">
     <link rel="stylesheet" href="styles/style.css">
     <script src="/src/js/"></script>
 </head>
@@ -50,12 +50,9 @@
                     <a href=>+7 (917) 510-57-59</a>
                 </div>
             </div>
-            <div class="header__profile">
-                <img  src="./images/Profile.png" alt="">
-            </div>
-<!--            <button id="acc" class="header__btn">-->
-<!--                <div class="header__btn-info">Корзина </div>-->
-<!--            </button>-->
+            <button id="acc" class="header__btn">
+                            <div class="header__btn-info">Корзина </div>
+                        </button>
         </div>
         <ul class="header__list">
             <li class="header__item"><a href="#">Холодные закуски</a></li>
@@ -71,168 +68,112 @@
     </div>
 </header>
 <main class="main">
-    <section class="question">
-        <div class="container">
-            <div class="question__logo">
-                <a target="_blank" href="../../index.html">
-                    <button type="button" class="question__logo-btn">
-                        <div class="question__logo-btn_svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
-                                <path d="M0.46967 5.46967C0.176777 5.76256 0.176777 6.23744 0.46967 6.53033L5.24264 11.3033C5.53553 11.5962 6.01041 11.5962 6.3033 11.3033C6.59619 11.0104 6.59619 10.5355 6.3033 10.2426L2.06066 6L6.3033 1.75736C6.59619 1.46447 6.59619 0.989593 6.3033 0.6967C6.01041 0.403806 5.53553 0.403806 5.24264 0.696699L0.46967 5.46967ZM1.5 5.25L1 5.25L1 6.75L1.5 6.75L1.5 5.25Z" fill="white"/>
-                            </svg>
-                        </div>
-                    </button>
-                </a>
-                <div class="question__logo-title">КОРЗИНА</div>
-            </div>
-            <div class="question__content">
-                <div class="question__block">
-                    <img class="question__block-img" src="./images/пеперони.jpg" alt="pizza">
-                    <div class="question__block-info">
-                        <h3 class="question__block-info_subtitle">ПИЦЦА ДВОЙНАЯ ПЕППЕРОНИ</h3>
-                        <p class="question__block-info_text">Кальмары, мидии, креветки, сыр маасдам, <br>
-                            красный лук, микс оливок, базилик, соус песто</p>
+<section class="accordion">
+    <div class="container">
+        <h2 class="accordion__title">Условия доставки</h2>
+        <div class="accordion__content">
+            <div class="accordion__info">
+                <div class="accordion__text">
+                    <div class="accordion__text-one" onclick="toggleSection(1)" >
+                        <p style="margin-right: 180px">У наших курьеров всегда должна быть сдача!</p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+  <path d="M15 1.5L8 8.5L1 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                       </span>
                     </div>
-                    <div class="question__block-count">
-                        <button type="button" class="question__block-count_btn">-
-                        </button>
-                        <p class="question__block-count_numbers">1</p>
-                        <button type="button" class="question__block-count_btn">+</button>
+                    <div class="accordion__text-two"  id="section1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta necessitatibus nulla obcaecati quae quam quasi repellendus sed sint. Delectus?
                     </div>
-                    <div class="question__block-cost">
-                        <div class="question__block-cost_money">1640 ₽</div>
-                        <button class="question__block-cost_btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                                <g clip-path="url(#clip0_69_468)">
-                                    <path d="M12.6035 10.1437L10.5311 8.07133L12.6035 5.99898C13.1126 5.48984 13.1018 4.64546 12.5924 4.13613C12.0831 3.6268 11.2387 3.61593 10.7296 4.12508L8.65723 6.19743L6.58487 4.12508C6.07573 3.61593 5.23135 3.6268 4.72202 4.13613C4.2127 4.64546 4.20183 5.48984 4.71097 5.99898L6.78332 8.07133L4.71097 10.1437C4.20183 10.6528 4.2127 11.4972 4.72202 12.0065C5.23135 12.5159 6.07573 12.5267 6.58487 12.0176L8.65723 9.94524L10.7296 12.0176C11.2387 12.5267 12.0831 12.5159 12.5924 12.0065C13.1018 11.4972 13.1126 10.6528 12.6035 10.1437Z" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_69_468">
-                                        <rect width="11.1304" height="11.1304" fill="white" transform="translate(8.65723 0.200928) rotate(45)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-
-                    </div>
-
                 </div>
-                <div class="question__block two">
-                    <img class="question__block-img" src="./images/pepe.jpg" alt="pizza">
-                    <div class="question__block-info">
-                        <h3 class="question__block-info_subtitle">ПИЦЦА ДВОЙНАЯ ПЕППЕРОНИ</h3>
-                        <p class="question__block-info_text">Кальмары, мидии, креветки, сыр маасдам, <br>
-                            красный лук, микс оливок, базилик, соус песто</p>
+                <div class="accordion__text">
+                    <div class="accordion__text-one" onclick="toggleSection(2)">
+                        <p style="margin-right: 180px">У наших курьеров всегда должна быть сдача!</p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+  <path d="M15 1.5L8 8.5L1 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                       </span>
                     </div>
-                    <div class="question__block-count">
-                        <button type="button" class="question__block-count_btn">-
-                        </button>
-                        <p class="question__block-count_numbers">1</p>
-                        <button type="button" class="question__block-count_btn">+</button>
+                    <div class="accordion__text-two" id="section2">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta necessitatibus nulla obcaecati quae quam quasi repellendus sed sint. Delectus?
                     </div>
-                    <div class="question__block-cost">
-                        <div class="question__block-cost_money">1640 ₽</div>
-                        <button class="question__block-cost_btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-                                <g clip-path="url(#clip0_69_468)">
-                                    <path d="M12.6035 10.1437L10.5311 8.07133L12.6035 5.99898C13.1126 5.48984 13.1018 4.64546 12.5924 4.13613C12.0831 3.6268 11.2387 3.61593 10.7296 4.12508L8.65723 6.19743L6.58487 4.12508C6.07573 3.61593 5.23135 3.6268 4.72202 4.13613C4.2127 4.64546 4.20183 5.48984 4.71097 5.99898L6.78332 8.07133L4.71097 10.1437C4.20183 10.6528 4.2127 11.4972 4.72202 12.0065C5.23135 12.5159 6.07573 12.5267 6.58487 12.0176L8.65723 9.94524L10.7296 12.0176C11.2387 12.5267 12.0831 12.5159 12.5924 12.0065C13.1018 11.4972 13.1126 10.6528 12.6035 10.1437Z" fill="white"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_69_468">
-                                        <rect width="11.1304" height="11.1304" fill="white" transform="translate(8.65723 0.200928) rotate(45)"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-
-                    </div>
-
                 </div>
-                <div class="question__line"></div>
+                <div class="accordion__text">
+                    <div class="accordion__text-one" onclick="toggleSection(3)">
+                        <p style="margin-right: 180px">У наших курьеров всегда должна быть сдача!</p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+  <path d="M15 1.5L8 8.5L1 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                       </span>
+                    </div>
+                    <div class="accordion__text-two" id="section3">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta necessitatibus nulla obcaecati quae quam quasi repellendus sed sint. Delectus?
+                    </div>
+                </div>
+                <div class="accordion__text">
+                    <div class="accordion__text-one" onclick="toggleSection(4)">
+                        <p style="margin-right: 180px">У наших курьеров всегда должна быть сдача!</p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+  <path d="M15 1.5L8 8.5L1 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                       </span>
+                    </div>
+                    <div class="accordion__text-two" id="section4">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta necessitatibus nulla obcaecati quae quam quasi repellendus sed sint. Delectus?
+                    </div>
+                </div>
+                <div class="accordion__text">
+                    <div class="accordion__text-one" onclick="toggleSection(5)">
+                        <p style="margin-right: 180px">У наших курьеров всегда должна быть сдача!</p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+  <path d="M15 1.5L8 8.5L1 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                       </span>
+                    </div>
+                    <div class="accordion__text-two" id="section5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta necessitatibus nulla obcaecati quae quam quasi repellendus sed sint. Delectus?
+                    </div>
+                </div>
+                <div class="accordion__text">
+                    <div class="accordion__text-one" onclick="toggleSection(6)">
+                        <p style="margin-right: 180px">У наших курьеров всегда должна быть сдача!</p>
+                        <span>
+                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" viewBox="0 0 16 10" fill="none">
+  <path d="M15 1.5L8 8.5L1 1.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                       </span>
+                    </div>
+                    <div class="accordion__text-two" id="section6">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta necessitatibus nulla obcaecati quae quam quasi repellendus sed sint. Delectus?
+                    </div>
+                </div>
+
+
+
             </div>
+
+           <div class="accordion__map">
+               <a class="dg-widget-link" href="http://2gis.kg/bishkek/firm/70000001034292853/center/74.5954728126526,42.87948635515942/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Бишкека</a><div class="dg-widget-link"><a href="http://2gis.kg/bishkek/firm/70000001034292853/photos/70000001034292853/center/74.5954728126526,42.87948635515942/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.kg/bishkek/center/74.595474,42.878904/zoom/16/routeTab/rsType/bus/to/74.595474,42.878904╎It-run, академия программирования?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до It-run, академия программирования</a></div><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":42.87948635515942,"lon":74.5954728126526,"zoom":16},"opt":{"city":"bishkek"},"org":[{"id":"70000001034292853"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+           </div>
         </div>
-    </section>
-     <section class="select">
-         <div class="container">
-             <div class="select__content">
-                 <div class="select__title">  ДОБАВИТЬ К ЗАКАЗУ
-                 </div>
-                 <div class="select__block">
-                     <div class="select__card">
-                         <img class="select__card-img" src="images/select1.jpg" alt="pizza">
-                         <h3 class="select__card-title">ПИЦЦА АНАНАСОВАЯ</h3>
-                          <div class="select__card-add">
-                              <p class="select__card-add_info">
-                                  Добавить
-                              </p>
-                              <button type="button" class="select__card-add_btn">+</button>
-                          </div>
-                         <div class="select__card-cost">1640 ₽</div>
-                     </div>
-                     <div class="select__card">
-                         <img class="select__card-img" src="images/pepe.jpg" alt="pizza">
-                         <h3 class="select__card-title">ПЕПЕРОНИ ОСТРАЯ</h3>
-                          <div class="select__card-add">
-                              <p class="select__card-add_info">
-                                  Добавить
-                              </p>
-                              <button type="button" class="select__card-add_btn">+</button>
-                          </div>
-                         <div class="select__card-cost">1640 ₽</div>
-                     </div>
-                     <div class="select__card">
-                         <img class="select__card-img" src="images/margo.jpg" alt="pizza">
-                         <h3 class="select__card-title">ПИЦЦА МАРГАРИТА</h3>
-                          <div class="select__card-add">
-                              <p class="select__card-add_info">
-                                  Добавить
-                              </p>
-                              <button type="button" class="select__card-add_btn">+</button>
-                          </div>
-                         <div class="select__card-cost">1640 ₽</div>
-                     </div>
-                     <div class="select__card">
-                         <img class="select__card-img" src="images/kolp.jpg" alt="pizza">
-                         <h3 class="select__card-title">КОЛБАСНЫЙ МИКС</h3>
-                          <div class="select__card-add">
-                              <p class="select__card-add_info">
-                                  Добавить
-                              </p>
-                              <button type="button" class="select__card-add_btn">+</button>
-                          </div>
-                         <div class="select__card-cost">1640 ₽</div>
-                     </div>
-                     <div class="select__block-line"></div>
-                 </div>
-                 <div class="select__box">
-                     <p class="select__box-one">Итого: </p>
-                     <p class="select__box-two">500 ₽</p>
-                     <p class="select__box-three">До бесплатной доставки не хватет: <span style="color: #72A479">100 ₽</span> </p>
-                     <p class="select__box-four">Минимальная сума заказа 1500 ₽</p>
+    </div>
 
-                     <button class="select__box-btn">
-                         <p>Оформить заказ</p>
-                     </button>
-
-                 </div>
-
-             </div>
-         </div>
-     </section>
-
-
-
+</section>
 </main>
 <footer class="footer">
     <div class="container">
         <div class="footer__content">
             <div class="footer__info">
                 <a href="#header">
-                    <div class="footer__info-arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
+                    <button  type="button"  class="footer__info-arrow"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
                         <path d="M13.0607 0.939577C12.4749 0.353795 11.5252 0.353801 10.9394 0.939592L1.3935 10.4856C0.807718 11.0714 0.807724 12.0211 1.39351 12.6069C1.9793 13.1927 2.92905 13.1927 3.51483 12.6069L12.0001 4.12156L20.4854 12.6068C21.0712 13.1926 22.0209 13.1926 22.6067 12.6068C23.1925 12.021 23.1925 11.0712 22.6067 10.4855L13.0607 0.939577ZM13.5001 4.0001L13.5 2.00023L10.5 2.00025L10.5001 4.00012L13.5001 4.0001Z" fill="#222021"/>
                     </svg>
 
-                    </div>
+                    </button>
                 </a>
                 <div class="footer__info-text">
                     <div class="footer__info-title">LOGOS</div>
@@ -244,10 +185,10 @@
                         Политика конфиденциальности</p>
                 </div>
                 <ul class="footer__info-list">
-                    <li class="footer__list-item"><a  href="">О ресторане</a></li>
-                    <li class="footer__list-item"><a href="">Условия доставки</a></li>
-                    <li class="footer__list-item"><a href=""> Возврат товара</a></li>
-                    <li class="footer__list-item"><a href=""> Акции</a></li>
+                    <li class="footer__list-item"><a target="_blank"  href="../scroll/index.html">О ресторане</a></li>
+                    <li class="footer__list-item"><a target="_blank" href="../delivery/index.html">Условия доставки</a></li>
+                    <li class="footer__list-item"><a target="_blank" href="../product/index.html"> Возврат товара</a></li>
+                    <li class="footer__list-item"><a target="_blank" href="../stock/index.html"> Акции</a></li>
 
                 </ul>
             </div>
@@ -285,6 +226,21 @@
     AOS.init();
 </script>
 <script>
+
+    function toggleSection(sectionNumber) {
+        var section = document.getElementById('section' + sectionNumber);
+
+        if (section.style.display === 'block') {
+            section.style.display = 'none';
+        } else {
+            section.style.display = 'block';
+        }
+    }
+
+
+
+
+
 
     $('#acc').on('click',function () {
         $('.overlay').fadeIn('smooth')

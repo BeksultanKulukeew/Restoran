@@ -19,11 +19,11 @@
   }
    &__list{
      position: absolute;
-     bottom: 0;
-     width: 1272px;
+     top: 564px;
      height: 80px;
      display: flex;
-     justify-content: space-between;
+    flex-direction: row;
+     gap: 128px;
      align-items: center;
      color: #CFCFCF;
      font-family: Gilroy;

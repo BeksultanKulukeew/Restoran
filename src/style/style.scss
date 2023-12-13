@@ -41,11 +41,20 @@ input,textarea{
 }
 .container{
   max-width: 1312px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
+
+
+
+
 @import "./_header";
 @import "./_intro";
 @import "./_entree";
 @import "./_cafe";
 @import "_footer";
+
+
+
+

@@ -1,0 +1,181 @@
+.select {
+  &__content {
+    column-gap: 30px;
+    padding: 20px 100px;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.10);;
+  }
+
+  &__title {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 30px 0;
+  }
+
+  &__block {
+    margin-bottom: 40px;
+    height: 234px;
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    position: relative;
+    display: flex;
+    &-line{
+      position: absolute;
+      left: 267.5px;
+      width: 1px;
+      height: 235px;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%);
+      &::before{
+        content: "";
+        position: absolute;
+        left: 267.5px;
+        width: 1px;
+        height: 235px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%);
+      }
+      &::after{
+        content: "";
+        position: absolute;
+        left: 535px;
+        width: 1px;
+        height: 235px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 100%);
+      }
+    }
+  }
+
+  &__card {
+    position: relative;
+    text-align: center;
+    width: 274px;
+    height: 234px;
+    gap: 10px;
+
+    &-img {
+      margin-top: 20px;
+      width: 209px;
+      height: 123px;
+      flex-shrink: 0;
+      border-radius: 10px;
+    }
+
+    &-title {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 10px;
+    }
+
+   &-add{
+     position: absolute;
+     left: 95px;
+     top: 185px;
+     display: flex;
+     gap: 10px;
+
+     &_info {
+       color: #C6CED1;
+       font-family: Gilroy;
+       font-size: 12px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: normal;
+     }
+
+     &_btn {
+       width: 18px;
+       height: 18px;
+       flex-shrink: 0;
+       border-radius: 5px;
+       @extend %buttonGradient;
+
+     }
+   }
+
+    &-cost {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-top: 37px;
+
+
+    }
+  }
+  &__box{
+    width: 763px;
+    height: 105px;
+    margin-left: 160px;
+    position: relative;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    &-one{
+      color: #A6A7AB;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      position: absolute;
+      left: 39px ;
+      top: 22px;
+    }
+    &-two{
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: absolute;
+      left: 95px;
+      top: 16px;
+    }
+    &-three{
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      position: absolute;
+      left:38px  ;
+      top: 53px;
+
+    }
+    &-four{
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      position: absolute;
+      left: 38px;
+      top: 80px;
+    }
+    &-btn{
+      padding:  17px 50px ;
+      @extend %buttonGradient;
+      border-radius: 10px;
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: absolute;
+      top: 27px;
+      left: 527px;
+    }
+  }
+}

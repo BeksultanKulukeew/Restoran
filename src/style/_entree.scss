@@ -26,12 +26,14 @@
 }
   &__content{
     display: flex;
+    flex-direction: row;
+    column-gap: 15px;
     gap: 15px;
   }
   &__card{
     height: 385px;
     position: relative;
-    width: calc((100% - 45px)/3);
+    width: 100%;
     border-radius: 10px;
     background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
     &-img{

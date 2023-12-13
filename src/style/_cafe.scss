@@ -1,5 +1,7 @@
-.cafe{
-  &__content{
+.cafe {
+  padding: 40px 0 ;
+  &__content {
+
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -7,32 +9,40 @@
     background: url("../images/cafe1.png");
     position: relative;
   }
-  &__info{
+
+
+
+  &__info {
     width: 50%;
-    display: flex;
-    flex-flow: column;
-  &-logo{
-    color: #FFF;
-    font-family: Gilroy;
-    font-size: 32px;
-    line-height: normal;
-    text-transform: uppercase;
-    position: absolute;
-    left: 70px;
-    top: 100px ;
-  }
-  &-text{
-    width: 563px;
-    color: #CFCFCF;
-    font-family: Gilroy;
-    font-size:16px;
-    font-style: normal;
-    font-weight: 400;
-    position: absolute;
-    left: 70px;
-    top: 165px;
-  }
-    &-btn{
+    display: none;
+    &.active{
+      display: block;
+    }
+
+    &-logo {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 32px;
+      line-height: normal;
+      text-transform: uppercase;
+      position: absolute;
+      left: 70px;
+      top: 100px;
+    }
+
+    &-text {
+      width: 563px;
+      color: #CFCFCF;
+      font-family: Gilroy;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      position: absolute;
+      left: 70px;
+      top: 165px;
+    }
+
+    &-btn {
       width: 223px;
       height: 59px;
       border-radius: 10px;
@@ -50,43 +60,54 @@
       bottom: 101px;
     }
   }
-  &__work {
-    width: 50%;
-    height: 469px;
+
+  &__list {
+
     @extend %flexCenter;
     flex-wrap: wrap;
+    flex-direction: row;
     gap: 15px;
     padding: 100px 0;
+    cursor: pointer;
+  }
+  &__work{
+    width: 50%;
+    height: 469px;
 
 
-    &-menu {
-      width: 228px;
-      height: 227px;
-      flex-shrink: 0;
-      background: rgba(80, 75, 74, 0.90);
-      backdrop-filter: blur(2px);
-      @extend %flexCenter;
-      flex-flow: column;
-      row-gap: 26px;
-      &-svg{
-        width: 70px;
-        height: 70px;
-        flex-shrink: 0;
-      }
-      &-info{
-        color: #FFF;
-        font-family: Gilroy;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px;
 
-        &:hover{
-          color: #79B282;
-          transition: .8s;
-        }
-      }
+  &-menu {
+    width: 228px;
+    height: 227px;
+    background: rgba(80, 75, 74, 0.90);
+    backdrop-filter: (2px);
+    @extend %flexCenter;
+
+    flex-flow: column;
+    row-gap: 26px;
+    user-select: none;
+     &.active,&:hover {
+      background: #79B282;
+      transition: .9s;
     }
 
+    &-svg {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+    }
+
+    &-info {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 25px;
+
+    }
   }
 }
+  }
+
+

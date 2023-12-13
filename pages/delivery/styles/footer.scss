@@ -2,16 +2,7 @@
   padding: 50px 0;
   &__content{
     width: 100%;
-    height: 864.5px;
     flex-shrink: 0;
-  }
-  &__map{
-    width:100%;
-    height: 500px;
-    iframe{
-      width: 100%;
-      height: 100%;
-    }
   }
   &__info{
     width: 100%;
@@ -73,6 +64,7 @@
     }
   }
 }
+
 .overlay{
   display: none;
   position: fixed;
@@ -114,12 +106,12 @@
     &-text {
       color: #FFF;
       font-family: Gilroy;
-      font-size: 30px;
+      font-size: 25px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       position: absolute;
-      left: 102px;
+      left: 75px;
       bottom: 157px;
     }
 
@@ -138,119 +130,4 @@
       bottom: 63px;
     }
   }
-}
-
-@media (max-width:1201px ){
-}
-@media (max-width: 1025px) {
-  body{
-
-  }
-  .header{
-    &__btn{
-      margin-left: -30px;
-    }
-  }
-  .intro{
-    &__list{
-      gap: 100px;
-    }
-  }
-  .footer{
-    &__info{
-      position: relative;
-      &-list{
-        position: absolute;
-        right: 50px;
-
-      }
-    }
-  }
-}
-@media (max-width: 769px){
-  body{
-    background: #635C5A;
-  }
-  .header{
-   &__btn{
-     margin-left: 40px;
-     margin-right: 20px;
-   }
-
-  }
-  .intro{
-   &__content{
-     &-title{
-       position: absolute;
-       left: 20px;
-     }
-     &-logo{
-       position: absolute;
-       left: 190px;
-     }
-
-   }
-    &__list{
-
-
-      gap: 20px;
-    }
-  }
-  .cafe{
-   &__list{
-     width: 50%;
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     position: absolute;
-   }
-   &__info{
-     width: 50%;
-     &-logo{
-       font-size: 25px;
-       position: absolute;
-       left: 20px;
-     }
-     &-text{
-       font-size: 14px;
-       position: absolute;
-       left: 20px;
-     }
-     &-btn{
-       width: 173px;
-       height: 59px;
-       position: absolute;
-       left: 65px;
-       top: 380px;
-     }
-   }
-    &__work-menu{
-      width: 168px;
-      height: 167px;
-      text-align: center;
-      gap: 10px;
-    }
-
-  }
-  .footer{
-    &__info{
-      &-arrow{
-        position: absolute;
-        left: 160px;
-      }
-      &-text{
-        position: absolute;
-        left: 250px;
-      }
-      &-list{
-        position: absolute;
-        top: 200px;
-        left: 100px;
-
-
-      }
-    }
-
-  }
-
 }

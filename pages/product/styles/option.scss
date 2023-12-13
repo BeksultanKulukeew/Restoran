@@ -1,5 +1,6 @@
 .option {
-  padding: 40px  70px;
+  padding: 40px  90px;
+  margin-left: 90px;
 
   &__logo {
     display: flex;
@@ -24,7 +25,7 @@
   }
 
   &__content {
-    width: 1210px;
+    width: 90%;
     height: 399px;
     flex-shrink: 0;
     display: flex;

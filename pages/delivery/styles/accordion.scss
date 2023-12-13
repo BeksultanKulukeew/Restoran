@@ -1,0 +1,72 @@
+.accordion{
+ &__content{
+   gap: 50px;
+   padding: 50px 0;
+   width: 100%;
+   display: flex;
+ }
+  &__title{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    padding: 20px 20px;
+    &::before{
+      content: "";
+      width: 33px;
+      height: 4px;
+      transform: rotate(90deg);
+      flex-shrink: 0;
+      background: #618967;
+      position: absolute;
+      left: -14px;
+      top: 37px;
+    }
+  }
+  &__info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  &__map{
+    width: 50%;
+
+  }
+&__text{
+
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+&-one{
+  width: 618px;
+  height: 68px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(115deg, #618967 5.11%, #72A479 94%);
+  color: #FFF;
+  font-family: Gilroy;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+  &-two{
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px; /* 156.25% */
+  }
+
+}
+
+}

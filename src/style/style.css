@@ -1,4 +1,4 @@
-.footer__info-arrow, .cafe__work-menu, .cafe__work, .entree__arrow-svg, .header__btn-info::after, .header__tel-call {
+.footer__info-arrow, .cafe__work-menu, .cafe__list, .entree__arrow-svg, .header__btn-info::after, .header__tel-call {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +54,7 @@ input, textarea {
 
 .container {
   max-width: 1312px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -132,8 +133,10 @@ input, textarea {
   position: relative;
   width: 149px;
   height: 52px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   border-radius: 10px;
-  margin-left: 158px;
+  margin-left: 138px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,15 +200,16 @@ input, textarea {
 }
 .intro__list {
   position: absolute;
-  bottom: 0;
-  width: 1272px;
+  top: 564px;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 128px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -260,12 +264,19 @@ input, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
   gap: 15px;
 }
 .entree__card {
   height: 385px;
   position: relative;
-  width: calc((100% - 45px) / 3);
+  width: 100%;
   border-radius: 10px;
   background: -webkit-gradient(linear, left top, right top, from(#494544), to(#504B4A));
   background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
@@ -363,6 +374,9 @@ input, textarea {
   border-radius: 50%;
 }
 
+.cafe {
+  padding: 40px 0;
+}
 .cafe__content {
   width: 100%;
   display: -webkit-box;
@@ -378,13 +392,10 @@ input, textarea {
 }
 .cafe__info {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  display: none;
+}
+.cafe__info.active {
+  display: block;
 }
 .cafe__info-logo {
   color: #FFF;
@@ -425,27 +436,41 @@ input, textarea {
   left: 70px;
   bottom: 101px;
 }
+.cafe__list {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 15px;
+  padding: 100px 0;
+  cursor: pointer;
+}
 .cafe__work {
   width: 50%;
   height: 469px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 15px;
-  padding: 100px 0;
 }
 .cafe__work-menu {
   width: 228px;
   height: 227px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
   background: rgba(80, 75, 74, 0.9);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: 2px;
+          backdrop-filter: 2px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
   row-gap: 26px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.cafe__work-menu.active, .cafe__work-menu:hover {
+  background: #79B282;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
 }
 .cafe__work-menu-svg {
   width: 70px;
@@ -460,11 +485,6 @@ input, textarea {
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
-}
-.cafe__work-menu-info:hover {
-  color: #79B282;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
 }
 
 .footer {
@@ -628,4 +648,92 @@ input, textarea {
   position: absolute;
   left: 135px;
   bottom: 63px;
+}
+
+@media (max-width: 1025px) {
+  .header__btn {
+    margin-left: -30px;
+  }
+  .intro__list {
+    gap: 100px;
+  }
+  .footer__info {
+    position: relative;
+  }
+  .footer__info-list {
+    position: absolute;
+    right: 50px;
+  }
+}
+@media (max-width: 769px) {
+  body {
+    background: #635C5A;
+  }
+  .header__btn {
+    margin-left: 40px;
+    margin-right: 20px;
+  }
+  .intro__content-title {
+    position: absolute;
+    left: 20px;
+  }
+  .intro__content-logo {
+    position: absolute;
+    left: 190px;
+  }
+  .intro__list {
+    gap: 20px;
+  }
+  .cafe__list {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: absolute;
+  }
+  .cafe__info {
+    width: 50%;
+  }
+  .cafe__info-logo {
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+  }
+  .cafe__info-text {
+    font-size: 14px;
+    position: absolute;
+    left: 20px;
+  }
+  .cafe__info-btn {
+    width: 173px;
+    height: 59px;
+    position: absolute;
+    left: 65px;
+    top: 380px;
+  }
+  .cafe__work-menu {
+    width: 168px;
+    height: 167px;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer__info-arrow {
+    position: absolute;
+    left: 160px;
+  }
+  .footer__info-text {
+    position: absolute;
+    left: 250px;
+  }
+  .footer__info-list {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+  }
 }

@@ -6,13 +6,6 @@
   }
   &__logo{
     margin-right: 72px;
-    color: #FFF;
-    font-family: Gilroy;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 25px;
-    letter-spacing: 3.75px;
   }
   &__search{
     display: flex;
@@ -33,19 +26,20 @@
       line-height: normal
     }
   }
-  &__tel{
+  &__tel {
     display: flex;
     gap: 10px;
-    margin-left: 30px;
-    &-call{
+    margin-left: 50px;
+
+    &-call {
       width: 32px;
       height: 32px;
       @extend %buttonGradient;
       @extend %flexCenter;
       border-radius: 50%;
-
     }
-    &-info{
+
+    &-info {
       display: flex;
       flex-direction: column;
       width: 136px;
@@ -56,35 +50,37 @@
       font-weight: 400;
       line-height: 20px;
     }
-
   }
-  &__btn{
+
+  &__btn {
     position: relative;
     @extend %buttonGradient;
     width: 149px;
     height: 52px;
-    flex-shrink: 0;
     border-radius: 10px;
-    margin-left: 138px;
+    margin-left: 158px;
     display: flex;
     align-items: center;
     gap: 15px;
-    &-info{
+
+    &-info {
       color: #FFF;
       font-family: Gilroy;
       font-size: 14px;
       font-weight: 600;
       margin-left: 30px;
-      &::before{
+
+      &::before {
         content: "";
         position: absolute;
-        left:95px;
+        left: 95px;
         top: 8px;
         width: 2px;
         height: 38px;
-        background:white;
+        background: white;
       }
-      &::after{
+
+      &::after {
         content: "4";
         width: 24px;
         height: 24px;
@@ -99,8 +95,20 @@
         right: 10px;
         top: 15px;
       }
-
     }
   }
+
+
+    &__list {
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #CFCFCF;
+      font-family: Gilroy;
+      font-size: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.10);;
+    }
+
 
 }
